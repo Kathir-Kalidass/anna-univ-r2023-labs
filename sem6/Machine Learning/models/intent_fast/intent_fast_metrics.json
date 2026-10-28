@@ -1,0 +1,118 @@
+{
+  "best_model": "logreg",
+  "test_size": 0.15,
+  "seed": 42,
+  "num_samples": 1960,
+  "num_intents": 14,
+  "benchmark": {
+    "logreg": {
+      "accuracy": 0.9863945578231292,
+      "macro_f1": 0.9864623465020517
+    },
+    "linear_svc": {
+      "accuracy": 0.9829931972789115,
+      "macro_f1": 0.9830645814763795
+    }
+  },
+  "best_test_accuracy": 0.9863945578231292,
+  "best_test_macro_f1": 0.9864623465020517,
+  "classification_report": {
+    "bootcamp": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 21.0
+    },
+    "final": {
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "f1-score": 0.9767441860465116,
+      "support": 21.0
+    },
+    "funding": {
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "f1-score": 0.9767441860465116,
+      "support": 21.0
+    },
+    "incubation": {
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1-score": 0.975609756097561,
+      "support": 21.0
+    },
+    "orientation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 21.0
+    },
+    "pitch_club": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 21.0
+    },
+    "pitching": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 21.0
+    },
+    "pre_final": {
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1-score": 0.975609756097561,
+      "support": 21.0
+    },
+    "registration": {
+      "precision": 0.9130434782608695,
+      "recall": 1.0,
+      "f1-score": 0.9545454545454546,
+      "support": 21.0
+    },
+    "rejection": {
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1-score": 0.975609756097561,
+      "support": 21.0
+    },
+    "selection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 21.0
+    },
+    "team_formation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 21.0
+    },
+    "vc": {
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1-score": 0.975609756097561,
+      "support": 21.0
+    },
+    "zonal_pitching": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 21.0
+    },
+    "accuracy": 0.9863945578231292,
+    "macro avg": {
+      "precision": 0.98729531338227,
+      "recall": 0.9863945578231293,
+      "f1-score": 0.9864623465020517,
+      "support": 294.0
+    },
+    "weighted avg": {
+      "precision": 0.98729531338227,
+      "recall": 0.9863945578231292,
+      "f1-score": 0.9864623465020516,
+      "support": 294.0
+    }
+  }
+}

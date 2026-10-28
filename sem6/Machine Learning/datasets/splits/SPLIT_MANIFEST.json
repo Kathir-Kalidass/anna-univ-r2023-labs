@@ -1,0 +1,27 @@
+{
+  "split_version": "1.0",
+  "source_files": {
+    "complete_dataset": "austartify_complete_dataset.json",
+    "dialogues_dataset": "austartify_dialogues_large.jsonl"
+  },
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "counts": {
+    "qa": {
+      "total": 1965,
+      "train": 1572,
+      "val": 196,
+      "test": 197
+    },
+    "dialogues": {
+      "total": 1800,
+      "train": 1440,
+      "val": 180,
+      "test": 180
+    }
+  },
+  "output_dir": "/home/kathir/Drone_Smart_City/ml_data/datasets/splits"
+}

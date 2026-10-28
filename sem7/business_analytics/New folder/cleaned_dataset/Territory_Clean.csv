@@ -1,0 +1,51 @@
+SalesTerritoryKey,Region,Country,State,City,Latitude,Longitude
+1,Northwest,United States,Washington,Seattle,47.6062,-122.3321
+1,Northwest,United States,Oregon,Portland,45.5152,-122.6784
+1,Northwest,United States,Idaho,Boise,43.615,-116.2023
+1,Northwest,United States,Montana,Billings,45.7833,-108.5007
+1,Northwest,United States,Washington,Spokane,47.6588,-117.426
+2,Northeast,United States,New York,New York City,40.7128,-74.006
+2,Northeast,United States,Massachusetts,Boston,42.3601,-71.0589
+2,Northeast,United States,Pennsylvania,Philadelphia,39.9526,-75.1652
+2,Northeast,United States,Connecticut,Hartford,41.7637,-72.6851
+2,Northeast,United States,New Jersey,Newark,40.7357,-74.1724
+3,Central,United States,Illinois,Chicago,41.8781,-87.6298
+3,Central,United States,Texas,Austin,30.2672,-97.7431
+3,Central,United States,Minnesota,Minneapolis,44.9778,-93.265
+3,Central,United States,Missouri,Kansas City,39.0997,-94.5786
+3,Central,United States,Ohio,Columbus,39.9612,-82.9988
+4,Southwest,United States,California,Los Angeles,34.0522,-118.2437
+4,Southwest,United States,Arizona,Phoenix,33.4484,-112.074
+4,Southwest,United States,Nevada,Las Vegas,36.1699,-115.1398
+4,Southwest,United States,New Mexico,Albuquerque,35.0844,-106.6504
+4,Southwest,United States,Utah,Salt Lake City,40.7608,-111.891
+5,Southeast,United States,Florida,Miami,25.7617,-80.1918
+5,Southeast,United States,Georgia,Atlanta,33.749,-84.388
+5,Southeast,United States,North Carolina,Charlotte,35.2271,-80.8431
+5,Southeast,United States,Tennessee,Nashville,36.1627,-86.7816
+5,Southeast,United States,Virginia,Richmond,37.5407,-77.436
+6,Canada,Canada,Ontario,Toronto,43.6532,-79.3832
+6,Canada,Canada,Quebec,Montreal,45.5017,-73.5673
+6,Canada,Canada,British Columbia,Vancouver,49.2827,-123.1207
+6,Canada,Canada,Alberta,Calgary,51.0447,-114.0719
+6,Canada,Canada,Ontario,Ottawa,45.4215,-75.6972
+7,France,France,Ile-de-France,Paris,48.8566,2.3522
+7,France,France,Auvergne-Rhone-Alpes,Lyon,45.764,4.8357
+7,France,France,Provence-Alpes-Cote-d'Azur,Marseille,43.2965,5.3698
+7,France,France,Nouvelle-Aquitaine,Bordeaux,44.8378,-0.5792
+7,France,France,Occitanie,Toulouse,43.6047,1.4442
+8,Germany,Germany,Bavaria,Munich,48.1351,11.582
+8,Germany,Germany,North Rhine-Westphalia,Cologne,50.9375,6.9603
+8,Germany,Germany,Berlin,Berlin,52.52,13.405
+8,Germany,Germany,Hamburg,Hamburg,53.5511,9.9937
+8,Germany,Germany,Hesse,Frankfurt,50.1109,8.6821
+9,Australia,Australia,New South Wales,Sydney,-33.8688,151.2093
+9,Australia,Australia,Victoria,Melbourne,-37.8136,144.9631
+9,Australia,Australia,Queensland,Brisbane,-27.4698,153.0251
+9,Australia,Australia,Western Australia,Perth,-31.9505,115.8605
+9,Australia,Australia,South Australia,Adelaide,-34.9285,138.6007
+10,United Kingdom,United Kingdom,England,London,51.5074,-0.1278
+10,United Kingdom,United Kingdom,England,Manchester,53.4808,-2.2426
+10,United Kingdom,United Kingdom,Scotland,Edinburgh,55.9533,-3.1883
+10,United Kingdom,United Kingdom,Wales,Cardiff,51.4816,-3.1791
+10,United Kingdom,United Kingdom,England,Birmingham,52.4862,-1.8904

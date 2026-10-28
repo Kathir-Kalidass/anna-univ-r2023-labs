@@ -1,0 +1,84 @@
+Experiment 2: Display Numbers 0 to 9 on a 7-Segment Display Using 8051
+Aim: To interface a 7-segment display (virtual hardware) with the 8051 microcontroller and display numbers from 0 to 9 continuously in a loop with a delay.
+Algorithm
+1. Start the program.
+2. Configure Port 1 as the output port.
+3. Store the 7-segment codes for digits 0–9 in an array.
+4. Display each digit sequentially with a delay.
+5. Repeat the process continuously using an infinite loop.
+Embedded C Program (Keil C51)
+#include <reg51.h>
+
+unsigned char seg_code[] = {
+    0x3F,  // 0
+    0x06,  // 1
+    0x5B,  // 2
+    0x4F,  // 3
+    0x66,  // 4
+    0x6D,  // 5
+    0x7D,  // 6
+    0x07,  // 7
+    0x7F,  // 8
+    0x6F   // 9
+};
+
+void delay(void)
+{
+    unsigned int i, j;
+
+    for (i = 0; i < 200; i++)
+        for (j = 0; j < 1275; j++);
+}
+
+void main(void)
+{
+    unsigned char i;
+
+    while (1)
+    {
+        for (i = 0; i < 10; i++)
+        {
+            P1 = seg_code[i];
+            delay();
+        }
+    }
+}
+
+
+Connections
+8051 Pin	7-Segment Display
+P1.0	Segment a
+P1.1	Segment b
+P1.2	Segment c
+P1.3	Segment d
+P1.4	Segment e
+P1.5	Segment f
+P1.6	Segment g
+P1.7	Decimal point (dp)
+Note: This code assumes a common-cathode 7-segment display, with logic 1 turning a segment ON. For a common-anode display, use the inverted segment codes and appropriate connections.
+Expected Output
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+
+The display cycles through 0 → 1 → 2 → … → 9 → 0 continuously, with a delay between digits.
+
+Result
+Thus, the 8051 microcontroller is programmed to display numbers from 0 to 9 continuously on a virtual 7-segment display with a delay.

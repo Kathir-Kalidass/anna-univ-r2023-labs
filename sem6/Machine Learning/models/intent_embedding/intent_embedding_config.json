@@ -1,0 +1,20 @@
+{
+  "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "normalize_embeddings": true,
+  "label_classes": [
+    "bootcamp",
+    "final",
+    "funding",
+    "incubation",
+    "orientation",
+    "pitch_club",
+    "pitching",
+    "pre_final",
+    "registration",
+    "rejection",
+    "selection",
+    "team_formation",
+    "vc",
+    "zonal_pitching"
+  ]
+}

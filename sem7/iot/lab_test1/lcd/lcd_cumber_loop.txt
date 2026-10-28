@@ -1,0 +1,68 @@
+#include <8051.h>
+
+unsigned char digits[] = {
+    0x3F, 0x06, 0x5B, 0x4F, 0x66,
+    0x6D, 0x7D, 0x07, 0x7F, 0x6F
+};
+
+void delay(void)
+{
+    unsigned int i;
+    for (i = 0; i < 30000; i++);
+}
+
+void main(void)
+{
+    unsigned char i;
+
+    while (1)
+    {
+        for (i = 0; i < 10; i++)
+        {
+            P2 = digits[i];
+            delay();
+        }
+    }
+}
+
+
+/*
+7-Segment Display Configuration — MCU 8051 IDE
+Your program displays digits 0 to 9 repeatedly using Port 2. Configure the virtual 7-segment display as follows.
+1. Open Virtual Hardware
+1. Open Virtual HW from the top menu.
+2. Select LED Display (or the 7-segment display option available in your version).
+3. Enable the display by clicking ON, if available.
+2. Configure port connections
+Your code uses P2 = digits[i];, so connect each segment to the corresponding Port 2 bit.
+Pin mapping
+7-segment signal	8051 pin
+a	P2.0
+b	P2.1
+c	P2.2
+d	P2.3
+e	P2.4
+f	P2.5
+g	P2.6
+dp (decimal point)	P2.7
+This mapping matches the standard bit patterns in your code, assuming the display uses active-high segments.
+
+3. Display patterns
+Digit	Hex value sent to P2
+0	0x3F
+1	0x06
+2	0x5B
+3	0x4F
+4	0x66
+5	0x6D
+6	0x7D
+7	0x07
+8	0x7F
+9	0x6F
+4. Run and verify
+1. Compile the C program.
+2. Start the simulator.
+3. Make sure the LED display is enabled and connected to Port 2.
+4. Run the program.
+Expected output: 0 → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9, repeating continuously.
+Important: The code assumes a common-cathode display and the bit order shown above. If your IDE's LED Display component has different pin labels or a common-anode configuration, the mapping or segment patterns must be adjusted.*/

@@ -1,0 +1,69 @@
+In the 8051 microcontroller, each port has 8 pins, numbered from bit 0 to bit 7. The syntax
+__sbit __at (address) variable_name;
+
+
+is SDCC-specific syntax that maps a C variable directly to a particular bit address in the 8051's bit-addressable memory or SFRs.
+1. How are P1.0 and P2.7 mapped?
+P1.0 — Switch input
+__sbit __at (0x90) SW;
+
+
+Switch
+Input
+
+P1.0
+0x90
+Bit address
+
+SW
+C variable
+
+
+When the program reads SW, it reads the logic level of Port 1, bit 0.
+
+P2.7 — LED output
+__sbit __at (0xA7) LED;
+
+
+LED
+Output
+
+P2.7
+0xA7
+Bit address
+
+LED
+C variable
+
+
+When the program assigns a value to LED, it changes the logic level of Port 2, bit 7.
+
+2. Why are the addresses 0x90 and 0xA7?
+In the standard 8051, the port SFR byte addresses are:
+Port	SFR byte address	Bit address range
+P0	0x80	0x80–0x87
+P1	0x90	0x90–0x97
+P2	0xA0	0xA0–0xA7
+P3	0xB0	0xB0–0xB7
+Each port's bit addresses start at its SFR byte address. Therefore:
+- P1.0: 0x90 + 0 = 0x90
+- P1.1: 0x90 + 1 = 0x91
+- P1.7: 0x90 + 7 = 0x97
+- P2.7: 0xA0 + 7 = 0xA7
+These are hexadecimal addresses. The 0x prefix means the number is in base 16.
+3. How does the program connect them logically?
+while (1)
+{
+    LED = SW;
+}
+
+
+This continuously copies the input bit to the output bit.
+SW / P1.0	LED / P2.7
+0	0
+1	1
+For a standard 8051 port, writing 1 to a port pin releases its quasi-bidirectional output driver, allowing the pin to be used as an input. Thus, P1 = 0xFF; prepares Port 1 for input use.
+Important: The C declaration maps the variables to microcontroller pins; it does not physically connect a switch or LED. In MCU 8051 IDE, the virtual hardware or simulator must associate the switch with P1.0 and the LED with P2.7. Physical hardware requires the corresponding wiring.
+Exam memory trick
+Port bit address = Port SFR address + bit number.
+Remember: P1 starts at 0x90; P2 starts at 0xA0. Hence P1.0 is 0x90, and P2.7 is 0xA7.

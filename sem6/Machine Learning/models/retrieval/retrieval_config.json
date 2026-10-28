@@ -1,0 +1,10 @@
+{
+  "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "num_documents": 3986,
+  "vector_dim": 384,
+  "normalized": true,
+  "source": {
+    "qa": "/home/user/Downloads/ml_data/datasets/austartify_qa_large.jsonl",
+    "knowledge": "/home/user/Downloads/ml_data/datasets/austartify_knowledge_chunks.jsonl"
+  }
+}

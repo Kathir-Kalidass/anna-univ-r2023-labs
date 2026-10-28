@@ -1,0 +1,38 @@
+# OS metadata (Windows / WSL / macOS)
+*:Zone.Identifier
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Java / Maven
+target/
+*.class
+
+# C build artifacts
+*.o
+*.obj
+a.out
+*.out
+*.exe
+
+# Logs, temp files, tool caches
+*.log
+~$*
+.gradio/

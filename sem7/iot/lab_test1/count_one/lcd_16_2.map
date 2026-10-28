@@ -1,0 +1,603 @@
+ASxxxx Linker V05.50.4-SDLD,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   00000000  l_BIT_BANK                      
+C:   00000000  l_BSEG                          
+C:   00000000  l_BSEG_BYTES                    
+C:   00000000  l_CABS                          
+C:   00000000  l_CONST                         
+C:   00000000  l_GSINIT                        
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_ISEG                          
+C:   00000000  l_OSEG                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l_XINIT                         
+C:   00000000  l_XISEG                         
+C:   00000000  l_XSEG                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_ISEG                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  s_PSEG                          
+C:   00000001  s_XISEG                         
+C:   00000001  s_XSEG                          
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   00000008  s_SSEG                          
+C:   0000000A  l_GSINIT2                       
+C:   00000010  s_REG_BANK_2                    
+C:   00000018  s_BIT_BANK                      
+C:   00000018  s_OSEG                          
+C:   00000018  s_REG_BANK_3                    
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s__CODE                         
+C:   00000022  l_GSINIT3                       
+ASxxxx Linker V05.50.4-SDLD,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   0000002A  l_GSINIT4                       
+C:   0000004E  l_HOME                          
+C:   0000004E  s_GSINIT0                       
+C:   00000051  s_GSINIT1                       
+C:   00000051  s_GSINIT2                       
+C:   0000005B  s_GSINIT3                       
+C:   00000063  l_CSEG                          
+C:   0000007D  s_GSINIT4                       
+C:   00000080  l_DSEG                          
+C:   000000A7  s_GSFINAL                       
+C:   000000A7  s_GSINIT                        
+C:   000000A7  s_GSINIT5                       
+C:   000000AA  s_CSEG                          
+C:   000000F8  l_SSEG                          
+C:   00000100  l_IRAM                          
+C:   0000010D  s_CONST                         
+C:   0000010D  s_XINIT                         
+
+ASxxxx Linker V05.50.4-SDLD,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _startup
+     00000080  G$P0$0_0$0                         lcd_16_2
+     00000080  G$P0_0$0_0$0                       lcd_16_2
+     00000080  _P0                                lcd_16_2
+     00000080  _P0_0                              lcd_16_2
+     00000081  G$P0_1$0_0$0                       lcd_16_2
+     00000081  G$SP$0_0$0                         lcd_16_2
+     00000081  _P0_1                              lcd_16_2
+     00000081  _SP                                lcd_16_2
+     00000082  G$DPL$0_0$0                        lcd_16_2
+     00000082  G$P0_2$0_0$0                       lcd_16_2
+     00000082  _DPL                               lcd_16_2
+     00000082  _P0_2                              lcd_16_2
+     00000083  G$DPH$0_0$0                        lcd_16_2
+     00000083  G$P0_3$0_0$0                       lcd_16_2
+     00000083  _DPH                               lcd_16_2
+     00000083  _P0_3                              lcd_16_2
+     00000084  G$P0_4$0_0$0                       lcd_16_2
+     00000084  _P0_4                              lcd_16_2
+     00000085  G$P0_5$0_0$0                       lcd_16_2
+     00000085  _P0_5                              lcd_16_2
+     00000086  G$P0_6$0_0$0                       lcd_16_2
+     00000086  _P0_6                              lcd_16_2
+     00000087  G$P0_7$0_0$0                       lcd_16_2
+     00000087  G$PCON$0_0$0                       lcd_16_2
+     00000087  _P0_7                              lcd_16_2
+     00000087  _PCON                              lcd_16_2
+     00000088  G$IT0$0_0$0                        lcd_16_2
+     00000088  G$TCON$0_0$0                       lcd_16_2
+     00000088  _IT0                               lcd_16_2
+     00000088  _TCON                              lcd_16_2
+     00000089  G$IE0$0_0$0                        lcd_16_2
+     00000089  G$TMOD$0_0$0                       lcd_16_2
+     00000089  _IE0                               lcd_16_2
+     00000089  _TMOD                              lcd_16_2
+     0000008A  G$IT1$0_0$0                        lcd_16_2
+     0000008A  G$TL0$0_0$0                        lcd_16_2
+     0000008A  _IT1                               lcd_16_2
+     0000008A  _TL0                               lcd_16_2
+     0000008B  G$IE1$0_0$0                        lcd_16_2
+     0000008B  G$TL1$0_0$0                        lcd_16_2
+     0000008B  _IE1                               lcd_16_2
+     0000008B  _TL1                               lcd_16_2
+     0000008C  G$TH0$0_0$0                        lcd_16_2
+     0000008C  G$TR0$0_0$0                        lcd_16_2
+     0000008C  _TH0                               lcd_16_2
+     0000008C  _TR0                               lcd_16_2
+     0000008D  G$TF0$0_0$0                        lcd_16_2
+     0000008D  G$TH1$0_0$0                        lcd_16_2
+     0000008D  _TF0                               lcd_16_2
+ASxxxx Linker V05.50.4-SDLD,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     0000008D  _TH1                               lcd_16_2
+     0000008E  G$TR1$0_0$0                        lcd_16_2
+     0000008E  _TR1                               lcd_16_2
+     0000008F  G$TF1$0_0$0                        lcd_16_2
+     0000008F  _TF1                               lcd_16_2
+     00000090  G$P1$0_0$0                         lcd_16_2
+     00000090  G$P1_0$0_0$0                       lcd_16_2
+     00000090  _P1                                lcd_16_2
+     00000090  _P1_0                              lcd_16_2
+     00000091  G$P1_1$0_0$0                       lcd_16_2
+     00000091  _P1_1                              lcd_16_2
+     00000092  G$P1_2$0_0$0                       lcd_16_2
+     00000092  _P1_2                              lcd_16_2
+     00000093  G$P1_3$0_0$0                       lcd_16_2
+     00000093  _P1_3                              lcd_16_2
+     00000094  G$P1_4$0_0$0                       lcd_16_2
+     00000094  _P1_4                              lcd_16_2
+     00000095  G$P1_5$0_0$0                       lcd_16_2
+     00000095  _P1_5                              lcd_16_2
+     00000096  G$P1_6$0_0$0                       lcd_16_2
+     00000096  _P1_6                              lcd_16_2
+     00000097  G$P1_7$0_0$0                       lcd_16_2
+     00000097  _P1_7                              lcd_16_2
+     00000098  G$RI$0_0$0                         lcd_16_2
+     00000098  G$SCON$0_0$0                       lcd_16_2
+     00000098  _RI                                lcd_16_2
+     00000098  _SCON                              lcd_16_2
+     00000099  G$SBUF$0_0$0                       lcd_16_2
+     00000099  G$TI$0_0$0                         lcd_16_2
+     00000099  _SBUF                              lcd_16_2
+     00000099  _TI                                lcd_16_2
+     0000009A  G$RB8$0_0$0                        lcd_16_2
+     0000009A  _RB8                               lcd_16_2
+     0000009B  G$TB8$0_0$0                        lcd_16_2
+     0000009B  _TB8                               lcd_16_2
+     0000009C  G$REN$0_0$0                        lcd_16_2
+     0000009C  _REN                               lcd_16_2
+     0000009D  G$SM2$0_0$0                        lcd_16_2
+     0000009D  _SM2                               lcd_16_2
+     0000009E  G$SM1$0_0$0                        lcd_16_2
+     0000009E  _SM1                               lcd_16_2
+     0000009F  G$SM0$0_0$0                        lcd_16_2
+     0000009F  _SM0                               lcd_16_2
+     000000A0  G$P2$0_0$0                         lcd_16_2
+     000000A0  G$P2_0$0_0$0                       lcd_16_2
+     000000A0  _P2                                lcd_16_2
+     000000A0  _P2_0                              lcd_16_2
+     000000A0  __XPAGE                            
+     000000A1  G$P2_1$0_0$0                       lcd_16_2
+     000000A1  _P2_1                              lcd_16_2
+     000000A2  G$P2_2$0_0$0                       lcd_16_2
+ASxxxx Linker V05.50.4-SDLD,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     000000A2  _P2_2                              lcd_16_2
+     000000A3  G$P2_3$0_0$0                       lcd_16_2
+     000000A3  _P2_3                              lcd_16_2
+     000000A4  G$P2_4$0_0$0                       lcd_16_2
+     000000A4  _P2_4                              lcd_16_2
+     000000A5  G$P2_5$0_0$0                       lcd_16_2
+     000000A5  _P2_5                              lcd_16_2
+     000000A6  G$P2_6$0_0$0                       lcd_16_2
+     000000A6  _P2_6                              lcd_16_2
+     000000A7  G$P2_7$0_0$0                       lcd_16_2
+     000000A7  _P2_7                              lcd_16_2
+     000000A8  G$EX0$0_0$0                        lcd_16_2
+     000000A8  G$IE$0_0$0                         lcd_16_2
+     000000A8  _EX0                               lcd_16_2
+     000000A8  _IE                                lcd_16_2
+     000000A9  G$ET0$0_0$0                        lcd_16_2
+     000000A9  _ET0                               lcd_16_2
+     000000AA  G$EX1$0_0$0                        lcd_16_2
+     000000AA  _EX1                               lcd_16_2
+     000000AB  G$ET1$0_0$0                        lcd_16_2
+     000000AB  _ET1                               lcd_16_2
+     000000AC  G$ES$0_0$0                         lcd_16_2
+     000000AC  _ES                                lcd_16_2
+     000000AF  G$EA$0_0$0                         lcd_16_2
+     000000AF  _EA                                lcd_16_2
+     000000B0  G$P3$0_0$0                         lcd_16_2
+     000000B0  G$P3_0$0_0$0                       lcd_16_2
+     000000B0  G$RXD$0_0$0                        lcd_16_2
+     000000B0  _P3                                lcd_16_2
+     000000B0  _P3_0                              lcd_16_2
+     000000B0  _RXD                               lcd_16_2
+     000000B1  G$P3_1$0_0$0                       lcd_16_2
+     000000B1  G$TXD$0_0$0                        lcd_16_2
+     000000B1  _P3_1                              lcd_16_2
+     000000B1  _TXD                               lcd_16_2
+     000000B2  G$INT0$0_0$0                       lcd_16_2
+     000000B2  G$P3_2$0_0$0                       lcd_16_2
+     000000B2  _INT0                              lcd_16_2
+     000000B2  _P3_2                              lcd_16_2
+     000000B3  G$INT1$0_0$0                       lcd_16_2
+     000000B3  G$P3_3$0_0$0                       lcd_16_2
+     000000B3  _INT1                              lcd_16_2
+     000000B3  _P3_3                              lcd_16_2
+     000000B4  G$P3_4$0_0$0                       lcd_16_2
+     000000B4  G$T0$0_0$0                         lcd_16_2
+     000000B4  _P3_4                              lcd_16_2
+     000000B4  _T0                                lcd_16_2
+     000000B5  G$P3_5$0_0$0                       lcd_16_2
+     000000B5  G$T1$0_0$0                         lcd_16_2
+     000000B5  _P3_5                              lcd_16_2
+     000000B5  _T1                                lcd_16_2
+ASxxxx Linker V05.50.4-SDLD,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     000000B6  G$P3_6$0_0$0                       lcd_16_2
+     000000B6  G$WR$0_0$0                         lcd_16_2
+     000000B6  _P3_6                              lcd_16_2
+     000000B6  _WR                                lcd_16_2
+     000000B7  G$P3_7$0_0$0                       lcd_16_2
+     000000B7  G$RD$0_0$0                         lcd_16_2
+     000000B7  _P3_7                              lcd_16_2
+     000000B7  _RD                                lcd_16_2
+     000000B8  G$IP$0_0$0                         lcd_16_2
+     000000B8  G$PX0$0_0$0                        lcd_16_2
+     000000B8  _IP                                lcd_16_2
+     000000B8  _PX0                               lcd_16_2
+     000000B9  G$PT0$0_0$0                        lcd_16_2
+     000000B9  _PT0                               lcd_16_2
+     000000BA  G$PX1$0_0$0                        lcd_16_2
+     000000BA  _PX1                               lcd_16_2
+     000000BB  G$PT1$0_0$0                        lcd_16_2
+     000000BB  _PT1                               lcd_16_2
+     000000BC  G$PS$0_0$0                         lcd_16_2
+     000000BC  _PS                                lcd_16_2
+     000000D0  G$P$0_0$0                          lcd_16_2
+     000000D0  G$PSW$0_0$0                        lcd_16_2
+     000000D0  _P                                 lcd_16_2
+     000000D0  _PSW                               lcd_16_2
+     000000D1  G$F1$0_0$0                         lcd_16_2
+     000000D1  _F1                                lcd_16_2
+     000000D2  G$OV$0_0$0                         lcd_16_2
+     000000D2  _OV                                lcd_16_2
+     000000D3  G$RS0$0_0$0                        lcd_16_2
+     000000D3  _RS0                               lcd_16_2
+     000000D4  G$RS1$0_0$0                        lcd_16_2
+     000000D4  _RS1                               lcd_16_2
+     000000D5  G$F0$0_0$0                         lcd_16_2
+     000000D5  _F0                                lcd_16_2
+     000000D6  G$AC$0_0$0                         lcd_16_2
+     000000D6  _AC                                lcd_16_2
+     000000D7  G$CY$0_0$0                         lcd_16_2
+     000000D7  _CY                                lcd_16_2
+     000000E0  G$ACC$0_0$0                        lcd_16_2
+     000000E0  _ACC                               lcd_16_2
+     000000F0  G$B$0_0$0                          lcd_16_2
+     000000F0  _B                                 lcd_16_2
+
+ASxxxx Linker V05.50.4-SDLD,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000080 =         128. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000008    000000F8 =         248. bytes (REL,OVR)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     00000008  __start__stack                     lcd_16_2
+
+ASxxxx Linker V05.50.4-SDLD,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    0000004E =          78. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   00000000  A$lcd_16_2$376                     lcd_16_2
+C:   00000008  A$lcd_16_2$380                     lcd_16_2
+C:   00000008  sdcc_atomic_exchange_rollback_st   lcd_16_2
+C:   00000009  A$lcd_16_2$381                     lcd_16_2
+C:   0000000A  A$lcd_16_2$383                     lcd_16_2
+C:   0000000B  A$lcd_16_2$384                     lcd_16_2
+C:   0000000C  A$lcd_16_2$385                     lcd_16_2
+C:   0000000D  A$lcd_16_2$386                     lcd_16_2
+C:   0000000E  A$lcd_16_2$387                     lcd_16_2
+C:   00000010  A$lcd_16_2$388                     lcd_16_2
+C:   00000011  A$lcd_16_2$389                     lcd_16_2
+C:   00000012  A$lcd_16_2$391                     lcd_16_2
+C:   00000013  A$lcd_16_2$392                     lcd_16_2
+C:   00000014  A$lcd_16_2$393                     lcd_16_2
+C:   00000015  A$lcd_16_2$394                     lcd_16_2
+C:   00000016  A$lcd_16_2$395                     lcd_16_2
+C:   00000018  A$lcd_16_2$397                     lcd_16_2
+C:   00000019  A$lcd_16_2$398                     lcd_16_2
+C:   0000001C  A$lcd_16_2$399                     lcd_16_2
+C:   0000001D  A$lcd_16_2$400                     lcd_16_2
+C:   0000001E  A$lcd_16_2$401                     lcd_16_2
+C:   0000001F  A$lcd_16_2$402                     lcd_16_2
+C:   00000020  A$lcd_16_2$404                     lcd_16_2
+C:   00000021  A$lcd_16_2$405                     lcd_16_2
+C:   00000024  A$lcd_16_2$406                     lcd_16_2
+C:   00000025  A$lcd_16_2$407                     lcd_16_2
+C:   00000026  A$lcd_16_2$408                     lcd_16_2
+C:   00000027  A$lcd_16_2$409                     lcd_16_2
+C:   00000028  A$lcd_16_2$411                     lcd_16_2
+C:   00000029  A$lcd_16_2$412                     lcd_16_2
+C:   0000002C  A$lcd_16_2$413                     lcd_16_2
+C:   0000002D  A$lcd_16_2$414                     lcd_16_2
+C:   0000002E  A$lcd_16_2$415                     lcd_16_2
+C:   0000002F  A$lcd_16_2$419                     lcd_16_2
+C:   0000002F  sdcc_atomic_exchange_gptr_impl     lcd_16_2
+C:   0000002F  sdcc_atomic_exchange_rollback_en   lcd_16_2
+C:   00000032  A$lcd_16_2$420                     lcd_16_2
+C:   00000034  A$lcd_16_2$421                     lcd_16_2
+C:   00000037  A$lcd_16_2$423                     lcd_16_2
+C:   00000038  A$lcd_16_2$424                     lcd_16_2
+C:   00000039  A$lcd_16_2$425                     lcd_16_2
+C:   0000003B  A$lcd_16_2$426                     lcd_16_2
+C:   0000003C  A$lcd_16_2$428                     lcd_16_2
+C:   0000003E  A$lcd_16_2$429                     lcd_16_2
+C:   0000003F  A$lcd_16_2$431                     lcd_16_2
+C:   0000003F  sdcc_atomic_compare_exchange_gpt   lcd_16_2
+C:   00000042  A$lcd_16_2$432                     lcd_16_2
+C:   00000044  A$lcd_16_2$433                     lcd_16_2
+C:   00000047  A$lcd_16_2$434                     lcd_16_2
+C:   00000049  A$lcd_16_2$456                     lcd_16_2
+ASxxxx Linker V05.50.4-SDLD,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    0000004E =          78. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   00000049  __sdcc_program_startup             lcd_16_2
+C:   0000004C  A$lcd_16_2$458                     lcd_16_2
+
+ASxxxx Linker V05.50.4-SDLD,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             0000004E    00000003 =           3. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   0000004E  __sdcc_gsinit_startup              
+
+ASxxxx Linker V05.50.4-SDLD,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00000051    0000000A =          10. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             0000005B    00000022 =          34. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   0000005B  __mcs51_genXINIT                   
+
+ASxxxx Linker V05.50.4-SDLD,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             0000007D    0000002A =          42. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   0000007D  __mcs51_genRAMCLEAR                
+C:   00000083  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V05.50.4-SDLD,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             000000A7    00000003 =           3. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   000000A7  A$lcd_16_2$449                     lcd_16_2
+
+ASxxxx Linker V05.50.4-SDLD,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AA    00000063 =          99. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   000000AA  A$lcd_16_2$486                     lcd_16_2
+C:   000000AA  C$lcd_16_2.c$5$0_0$3               lcd_16_2
+C:   000000AA  C$lcd_16_2.c$8$2_0$3               lcd_16_2
+C:   000000AA  G$delay$0$0                        lcd_16_2
+C:   000000AA  _delay                             lcd_16_2
+C:   000000AC  A$lcd_16_2$487                     lcd_16_2
+C:   000000AE  A$lcd_16_2$489                     lcd_16_2
+C:   000000AF  A$lcd_16_2$490                     lcd_16_2
+C:   000000B2  A$lcd_16_2$491                     lcd_16_2
+C:   000000B3  A$lcd_16_2$493                     lcd_16_2
+C:   000000B4  A$lcd_16_2$494                     lcd_16_2
+C:   000000B5  A$lcd_16_2$495                     lcd_16_2
+C:   000000B7  A$lcd_16_2$500                     lcd_16_2
+C:   000000B7  C$lcd_16_2.c$9$2_0$3               lcd_16_2
+C:   000000B7  XG$delay$0$0                       lcd_16_2
+C:   000000B8  A$lcd_16_2$513                     lcd_16_2
+C:   000000B8  C$lcd_16_2.c$11$2_0$5              lcd_16_2
+C:   000000B8  G$command$0$0                      lcd_16_2
+C:   000000B8  _command                           lcd_16_2
+C:   000000BB  A$lcd_16_2$517                     lcd_16_2
+C:   000000BB  C$lcd_16_2.c$14$1_0$5              lcd_16_2
+C:   000000BD  A$lcd_16_2$521                     lcd_16_2
+C:   000000BD  C$lcd_16_2.c$15$1_0$5              lcd_16_2
+C:   000000BF  A$lcd_16_2$525                     lcd_16_2
+C:   000000BF  C$lcd_16_2.c$16$1_0$5              lcd_16_2
+C:   000000C1  A$lcd_16_2$529                     lcd_16_2
+C:   000000C1  C$lcd_16_2.c$18$1_0$5              lcd_16_2
+C:   000000C3  A$lcd_16_2$534                     lcd_16_2
+C:   000000C3  C$lcd_16_2.c$19$1_0$5              lcd_16_2
+C:   000000C3  XG$command$0$0                     lcd_16_2
+C:   000000C4  A$lcd_16_2$547                     lcd_16_2
+C:   000000C4  C$lcd_16_2.c$21$1_0$7              lcd_16_2
+C:   000000C4  G$display$0$0                      lcd_16_2
+C:   000000C4  _display                           lcd_16_2
+C:   000000C7  A$lcd_16_2$551                     lcd_16_2
+C:   000000C7  C$lcd_16_2.c$24$1_0$7              lcd_16_2
+C:   000000C9  A$lcd_16_2$555                     lcd_16_2
+C:   000000C9  C$lcd_16_2.c$25$1_0$7              lcd_16_2
+C:   000000CB  A$lcd_16_2$559                     lcd_16_2
+C:   000000CB  C$lcd_16_2.c$26$1_0$7              lcd_16_2
+C:   000000CD  A$lcd_16_2$563                     lcd_16_2
+C:   000000CD  C$lcd_16_2.c$28$1_0$7              lcd_16_2
+C:   000000CF  A$lcd_16_2$568                     lcd_16_2
+C:   000000CF  C$lcd_16_2.c$29$1_0$7              lcd_16_2
+C:   000000CF  XG$display$0$0                     lcd_16_2
+C:   000000D0  A$lcd_16_2$581                     lcd_16_2
+C:   000000D0  C$lcd_16_2.c$31$1_0$9              lcd_16_2
+C:   000000D0  C$lcd_16_2.c$33$1_0$9              lcd_16_2
+C:   000000D0  G$main$0$0                         lcd_16_2
+C:   000000D0  _main                              lcd_16_2
+ASxxxx Linker V05.50.4-SDLD,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000AA    00000063 =          99. bytes (REL,CON,CODE)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+C:   000000D3  A$lcd_16_2$582                     lcd_16_2
+C:   000000D6  A$lcd_16_2$585                     lcd_16_2
+C:   000000D6  C$lcd_16_2.c$34$1_0$9              lcd_16_2
+C:   000000D9  A$lcd_16_2$586                     lcd_16_2
+C:   000000DC  A$lcd_16_2$589                     lcd_16_2
+C:   000000DC  C$lcd_16_2.c$35$1_0$9              lcd_16_2
+C:   000000DF  A$lcd_16_2$590                     lcd_16_2
+C:   000000E2  A$lcd_16_2$593                     lcd_16_2
+C:   000000E2  C$lcd_16_2.c$36$1_0$9              lcd_16_2
+C:   000000E5  A$lcd_16_2$594                     lcd_16_2
+C:   000000E8  A$lcd_16_2$597                     lcd_16_2
+C:   000000E8  C$lcd_16_2.c$38$1_0$9              lcd_16_2
+C:   000000EB  A$lcd_16_2$598                     lcd_16_2
+C:   000000EE  A$lcd_16_2$601                     lcd_16_2
+C:   000000EE  C$lcd_16_2.c$39$1_0$9              lcd_16_2
+C:   000000F1  A$lcd_16_2$602                     lcd_16_2
+C:   000000F4  A$lcd_16_2$605                     lcd_16_2
+C:   000000F4  C$lcd_16_2.c$40$1_0$9              lcd_16_2
+C:   000000F7  A$lcd_16_2$606                     lcd_16_2
+C:   000000FA  A$lcd_16_2$609                     lcd_16_2
+C:   000000FA  C$lcd_16_2.c$41$1_0$9              lcd_16_2
+C:   000000FD  A$lcd_16_2$610                     lcd_16_2
+C:   00000100  A$lcd_16_2$613                     lcd_16_2
+C:   00000100  C$lcd_16_2.c$42$1_0$9              lcd_16_2
+C:   00000103  A$lcd_16_2$614                     lcd_16_2
+C:   00000106  A$lcd_16_2$618                     lcd_16_2
+C:   00000106  C$lcd_16_2.c$44$1_0$9              lcd_16_2
+C:   00000108  A$lcd_16_2$623                     lcd_16_2
+C:   00000108  C$lcd_16_2.c$45$1_0$9              lcd_16_2
+C:   00000108  XG$main$0$0                        lcd_16_2
+C:   00000109  ___sdcc_external_startup           _startup
+ASxxxx Linker V05.50.4-SDLD,  page 19.
+
+Files Linked                              [ module(s) ]
+
+lcd_16_2.rel                              [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtpagesfr.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _startup.rel ]
+
+ASxxxx Linker V05.50.4-SDLD,  page 20.
+
+User Base Address Definitions
+
+HOME = 0x0000
+XSEG = 0x0001
+PSEG = 0x0001
+ISEG = 0x0000
+BSEG = 0x0000
+
+

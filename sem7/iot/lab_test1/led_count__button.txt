@@ -1,0 +1,177 @@
+give valid okk with correct button config lcd congig on valid panel
+Digital Counter Using Button and 7-Segment Display
+For MCU 8051 IDE + SDCC on Windows, use this configuration and program.
+
+1. Virtual hardware configuration
+SDCC Small Device C Compiler on Windows - Hackster.io
+A. Button configuration
+
+Open Virtual HW → Push Button (or the available button/switch component).
+
+Configure the output pin to P1.0.
+
+The program expects HIGH when pressed and LOW when released.
+
+8051 Simulator download | SourceForge.net
+B. 7-segment display configuration
+
+Open Virtual HW → LED Display or the 7-segment component available in your version.
+
+Map segments a,b,c,d,e,f,g,dp to P2.0 through P2.7.
+
+Use a common-cathode, active-high display if that option is available.
+
+2. Correct SDCC program
+This displays 0 initially, increments once for each button press, and wraps from 9 back to 0.
+
+#include <8051.h>
+
+unsigned char digits[10] = {
+    0x3F, 0x06, 0x5B, 0x4F, 0x66,
+    0x6D, 0x7D, 0x07, 0x7F, 0x6F
+};
+
+void delay(void)
+{
+    unsigned int i;
+    for (i = 0; i < 3000; i++);
+}
+
+void main(void)
+{
+    unsigned char count = 0;
+
+    P1 = 0xFF;          /* Release P1 pins for input */
+    P2 = digits[count]; /* Display 0 */
+
+    while (1)
+    {
+        if (P1_0 == 1)  /* Button pressed: HIGH */
+        {
+            delay();    /* Debounce */
+
+            if (P1_0 == 1)
+            {
+                count++;
+
+                if (count > 9)
+                    count = 0;
+
+                P2 = digits[count];
+
+                while (P1_0 == 1); /* Wait for release */
+                delay();
+            }
+        }
+    }
+}
+
+3. Expected output
+Button presses
+
+Display
+
+Initially
+
+0
+
+1
+
+1
+
+2
+
+2
+
+3
+
+3
+
+…
+
+…
+
+9
+
+9
+
+10
+
+0
+
+Important configuration check
+The virtual button's actual output polarity and the display's segment order can vary by component. If your button configuration does not explicitly support a HIGH-on-press output, send a screenshot of the button configuration window. I'll map the program to the exact options shown in your MCU 8051 IDE.
+
+User attachment
+In your MCU 8051 IDE, the menu shows Simple Keypad and Matrix Keypad, but no separate Push Button component. For the digital counter, use Simple Keypad as the input and LED Display for the 7-segment output.
+
+1. Configure the input
+Click Virtual HW → Simple Keypad.
+
+In the keypad window, inspect its pin configuration.
+
+Configure its output to P1.0 if the component supports direct pin mapping.
+
+Important: A keypad may not behave exactly like a single push button. The program below assumes P1.0 becomes HIGH when the key is pressed.
+
+2. Configure the display
+Click Virtual HW → LED Display.
+
+Configure the display to use Port 2.
+
+Use the segment mapping a through g on P2.0–P2.6 and decimal point on P2.7, if supported.
+
+Enable the display.
+
+3. Program for the counter
+#include <8051.h>
+
+unsigned char digits[10] = {
+    0x3F, 0x06, 0x5B, 0x4F, 0x66,
+    0x6D, 0x7D, 0x07, 0x7F, 0x6F
+};
+
+void delay(void)
+{
+    unsigned int i;
+    for (i = 0; i < 3000; i++);
+}
+
+void main(void)
+{
+    unsigned char count = 0;
+
+    P1 = 0xFF;
+    P2 = digits[count];
+
+    while (1)
+    {
+        if (P1_0 == 1)
+        {
+            delay();
+
+            if (P1_0 == 1)
+            {
+                count++;
+
+                if (count > 9)
+                    count = 0;
+
+                P2 = digits[count];
+
+                while (P1_0 == 1);
+                delay();
+            }
+        }
+    }
+}
+
+4. Verify the result
+Initially, the display shows 0.
+
+Each press increments the displayed digit.
+
+After 9, the counter returns to 0.
+
+Next: Open Simple Keypad and send me a screenshot of its configuration window. I can then tell you the exact pin settings; the menu screenshot alone doesn't establish how that component maps keys to P1.0.
+

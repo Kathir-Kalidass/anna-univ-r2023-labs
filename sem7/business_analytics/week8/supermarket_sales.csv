@@ -1,0 +1,31 @@
+ID,Branch,City,Customer_Type,Gender,Product_Line,Unit_Price,Quantity,Total Sales,Rating,Payment
+1,A,Chennai,Member,Female,Health & Beauty,45.2,5,226.0,8.5,Cash
+2,B,Madurai,Normal,Male,Electronics,78.5,3,235.5,7.2,Credit Card
+3,C,Coimbatore,Member,Female,Food & Beverages,32.4,8,259.2,9.1,E-wallet
+4,A,Chennai,Normal,Male,Sports & Travel,65.8,4,263.2,6.8,Cash
+5,B,Madurai,Member,Female,Fashion Accessories,54.3,6,325.8,8.9,Credit Card
+6,C,Coimbatore,Normal,Male,Home & Lifestyle,89.5,2,179.0,6.5,E-wallet
+7,A,Chennai,Member,Male,Electronics,92.4,5,462.0,8.2,Credit Card
+8,B,Madurai,Normal,Female,Food & Beverages,28.6,9,257.4,7.9,Cash
+9,C,Coimbatore,Member,Female,Sports & Travel,71.2,3,213.6,9.3,E-wallet
+10,A,Chennai,Normal,Male,Health & Beauty,39.8,7,278.6,6.9,Cash
+11,B,Madurai,Member,Female,Electronics,84.7,4,338.8,8.7,Credit Card
+12,C,Coimbatore,Normal,Male,Fashion Accessories,52.5,6,315.0,7.4,E-wallet
+13,A,Chennai,Member,Female,Home & Lifestyle,76.3,5,381.5,9.0,Cash
+14,B,Madurai,Normal,Male,Sports & Travel,63.4,3,190.2,6.7,Credit Card
+15,C,Coimbatore,Member,Female,Food & Beverages,35.7,10,357.0,9.4,E-wallet
+16,A,Chennai,Normal,Male,Electronics,95.2,2,190.4,7.1,Cash
+17,B,Madurai,Member,Female,Health & Beauty,41.6,8,332.8,8.8,Credit Card
+18,C,Coimbatore,Normal,Male,Home & Lifestyle,87.3,4,349.2,6.6,E-wallet
+19,A,Chennai,Member,Female,Fashion Accessories,58.9,7,412.3,9.2,Cash
+20,B,Madurai,Normal,Male,Food & Beverages,29.5,5,147.5,7.0,Credit Card
+21,C,Coimbatore,Member,Female,Electronics,88.6,6,531.6,9.5,E-wallet
+22,A,Chennai,Normal,Male,Sports & Travel,69.7,4,278.8,6.4,Cash
+23,B,Madurai,Member,Female,Home & Lifestyle,81.5,5,407.5,8.6,Credit Card
+24,C,Coimbatore,Normal,Male,Health & Beauty,43.2,7,302.4,7.3,E-wallet
+25,A,Chennai,Member,Female,Food & Beverages,37.8,9,340.2,9.1,Cash
+26,B,Madurai,Normal,Male,Electronics,91.3,3,273.9,6.8,Credit Card
+27,C,Coimbatore,Member,Female,Sports & Travel,67.5,6,405.0,9.0,E-wallet
+28,A,Chennai,Normal,Male,Fashion Accessories,55.4,5,277.0,7.2,Cash
+29,B,Madurai,Member,Female,Home & Lifestyle,79.8,4,319.2,8.9,Credit Card
+30,C,Coimbatore,Normal,Male,Food & Beverages,31.6,8,252.8,7.5,E-wallet

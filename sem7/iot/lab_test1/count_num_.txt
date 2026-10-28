@@ -1,0 +1,75 @@
+Experiment 3: Digital Counter Using 8051 Microcontroller
+Aim: To implement a digital counter using the 8051 microcontroller that counts the number of times a push button connected to Port 1 is pressed and displays the count on a 7-segment display.
+Algorithm
+1. Initialize Port 1 as input for the push button and Port 2 as output for the 7-segment display.
+2. Initialize the counter to zero.
+3. Continuously monitor the push button.
+4. When the button is pressed (P1.0 becomes HIGH), increment the counter once.
+5. Display the counter value on the 7-segment display.
+6. Wait until the button is released before detecting the next press.
+7. Repeat continuously. The counter resets to zero after 9.
+Embedded C Program (Keil C51)
+#include <reg51.h>
+
+sbit BUTTON = P1^0;
+
+unsigned char seg_code[] = {
+    0x3F, 0x06, 0x5B, 0x4F, 0x66,
+    0x6D, 0x7D, 0x07, 0x7F, 0x6F
+};
+
+unsigned char count = 0;
+
+void delay(void)
+{
+    unsigned int i, j;
+    for (i = 0; i < 100; i++)
+        for (j = 0; j < 1275; j++);
+}
+
+void main(void)
+{
+    P1 = 0xFF;   // Configure P1 for input
+    P2 = 0x00;   // Configure P2 for output
+
+    P2 = seg_code[count];
+
+    while (1)
+    {
+        if (BUTTON == 1)
+        {
+            delay();              // Debounce delay
+
+            if (BUTTON == 1)
+            {
+                count++;
+
+                if (count > 9)
+                    count = 0;
+
+                P2 = seg_code[count];
+
+                while (BUTTON == 1); // Wait for release
+                delay();             // Release debounce
+            }
+        }
+    }
+}
+
+
+Connections
+8051 Pin	Connection
+P1.0	Push button input (HIGH when pressed)
+P2.0–P2.6	7-segment display segments a–g
+GND	Common ground
+Display	Common-cathode 7-segment display
+Note: This program assumes a common-cathode display and a virtual button that drives P1.0 HIGH when pressed. In real hardware, use a suitable pull-down or pull-up arrangement according to the circuit.
+Expected Output
+7-segment display
+0
+
+Press the virtual button to increment the count.
+Press ButtonReset Counter
+Example sequence: 0 → 1 → 2 → 3 → … → 9 → 0
+Result
+Thus, a digital counter was implemented using the 8051 microcontroller. Each button press increments the count, and the count is displayed on a 7-segment display, cycling from 0 to 9.

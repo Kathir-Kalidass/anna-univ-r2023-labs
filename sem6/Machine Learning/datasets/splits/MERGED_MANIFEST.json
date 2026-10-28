@@ -1,0 +1,25 @@
+{
+  "format": "chat_messages_jsonl",
+  "output_files": {
+    "train": "train_merged.jsonl",
+    "val": "val_merged.jsonl",
+    "test": "test_merged.jsonl"
+  },
+  "stats": {
+    "train": {
+      "qa_records": 1572,
+      "dialogue_records": 1440,
+      "merged_total": 3012
+    },
+    "val": {
+      "qa_records": 196,
+      "dialogue_records": 180,
+      "merged_total": 376
+    },
+    "test": {
+      "qa_records": 197,
+      "dialogue_records": 180,
+      "merged_total": 377
+    }
+  }
+}

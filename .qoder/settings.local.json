@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git update-index --force-remove sem7/DevOps/week2/devops_app1 && git rm --cached -r sem4/GenAI-Lab-Exercises/Week4/.gradio && git add -A . && echo \"--- gitlink entries:\" && git ls-files -s | awk '$1==\"160000\"' | wc -l && echo \"--- staged files:\" && git diff --cached --name-only | wc -l && echo \"--- largest staged:\" && git ls-files -z | xargs -0 -I{} stat -c '%s %n' {} | sort -rn | head -5)"
+    ]
+  }
+}
